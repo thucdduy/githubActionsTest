@@ -19,7 +19,7 @@ jobs:
         shell: python
   run-windows-commands:
     needs:
-      - "run-shell-commandh"
+      - "run-shell-command"
     runs-on: windows-latest
     steps:
       - name: Directory Powershell
