@@ -12,6 +12,12 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import platform
+          print(flatform.processor())
+        shell: python
+
 
 
 
