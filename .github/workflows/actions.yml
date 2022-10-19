@@ -1,6 +1,6 @@
 name: ACtions Workflows
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   run-github-actions:
@@ -27,6 +27,5 @@ jobs:
           who-to-greet: "Thuc Doan DUy"
       - name: Log Greet Time
         run: echo "${{ steps.greet.outputs.time }}"
-
 
       
