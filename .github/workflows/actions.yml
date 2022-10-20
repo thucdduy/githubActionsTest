@@ -10,10 +10,17 @@ on:
   #pull_request:
   # types: [closed, assigned, opened, reopened]
 
+env: 
+  MY_SECRET: ${{ secrets.MY_SECRET }}
+
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: print secret
+        run: |
+          echo ${{ MY_SECRET }}
+
       - name: show payload
         run: |
           echo "${{ github.event.client_payload.env }}"
