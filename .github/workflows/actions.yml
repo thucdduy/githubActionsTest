@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: print secret
         run: |
-          echo ${{ MY_SECRET }}
+          echo $MY_SECRET
 
       - name: show payload
         run: |
