@@ -13,11 +13,7 @@ on:
 env: 
   MY_SECRET: ${{ secrets.MY_SECRET }}
 
-
-
-
 jobs:
-
   create_issue:
     runs-on: ubuntu-latest
     permissions:
@@ -34,7 +30,7 @@ jobs:
             "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
             }' \
           --fail
-
+          
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
