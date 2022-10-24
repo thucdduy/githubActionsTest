@@ -28,8 +28,8 @@ jobs:
       - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
         with:
-          entrypoint: './script.sh'
-          args: 'song string'
+          entrypoint: ./script.sh
+          args: 'some string'
 
 
 
