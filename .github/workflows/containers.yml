@@ -25,6 +25,7 @@ jobs:
           entrypoint: '/usr/local/bin/node'
           args: '-v'
       - uses: actions/checkout@v1
+      - run: ls -a
       - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
         with:
